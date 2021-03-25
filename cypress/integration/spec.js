@@ -11,14 +11,4 @@ describe('Example site', () => {
     cy.contains('a', 'README').click()
     cy.location('pathname').should('equal', '/READMEZ/')
   })
-
-  it('goes directly to README', () => {
-    cy.visit('/README')
-    cy.contains('h2', 'README')
-  })
-
-  it('redirects to README/', () => {
-    cy.visit('/README/')
-    cy.contains('h2', 'README')
-  })
 })
